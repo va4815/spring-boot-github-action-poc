@@ -61,8 +61,8 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Build with Maven
-        run: mvn clean package
+      - name: Build with Gradle
+        run: ./gradlew build --no-daemon
 
       # Add deployment steps here, for example deploying to AWS, Azure, or another server
       # In a real-world scenario, you might deploy your application using SSH or deploy to a cloud service.
